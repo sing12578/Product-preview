@@ -1,0 +1,112 @@
+:root {
+    --font-family-Montserrat: "Montserrat", sans-serif;
+    --font-family-fraunces: "Fraunces", serif;
+    --font-size-Paragraph: 14px;
+    --font-Montserrat-weight500: 500;
+    --font-Montserrat-weight700: 700;
+    --font-Fraunces-weight700: 700;
+    /* Primary */
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    /* Neutral */
+    --Very-darkblue: hsl(212, 21%, 14%);
+    --Dark-grayishblue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family-Montserrat);
+    font-size: var(--font-size-Paragraph);
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--Cream);
+}
+
+.product-component {
+    display: flex;
+    flex-direction: row;
+}
+
+.image-product{
+    max-width: 300px;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.detal-component {
+    max-width: 240px;
+    background-color: var(--White);
+    padding: 30px;
+    border-radius: 0 1rem 1rem 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text-header {
+    letter-spacing: 5px;
+    color: var(--Dark-grayishblue);
+
+}
+
+.topic {
+    font-size: 2rem;
+    font-weight: var(--font-Fraunces-weight700);
+    font-family: var(--font-family-fraunces);
+}
+
+.article {
+    color: var(--Dark-grayishblue);
+}
+
+.productPrice-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.price {
+    font-size: 2rem;
+    font-family: var(--font-family-fraunces);
+    font-weight: var(--font-Montserrat-weight700);
+    color: var(--Dark-cyan);
+}
+
+.decreasedPrice {
+    color: var(--Dark-grayishblue);
+    padding-left: 1rem;
+    text-decoration: line-through;
+}
+
+.addToCard-container {
+    text-align: center;
+}
+
+.addToCard-btn {
+    background-color: var(--Dark-cyan);
+    color: var(--White);
+    width: 100%;
+    padding: 1rem 0 1rem 0;
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: var(--font-Fraunces-weight700);
+}
+
+.pointCard-component {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.pointCard-component div{
+    padding-left: 5px;
+}
